@@ -1,0 +1,13 @@
+@use "sass:math";
+
+@function em($size, $context: 16) {
+    @return math.div($size/$context) * 1em;
+}
+
+// Same function is replicated in javascript in utilities/helpers.ts
+// Any changes here should be reflected there.
+@function rem($pxsize, $context: 16) {
+    @return math.div($pxsize, $context) * 1rem;
+}
+
+// TODO: Add commonly used breakpoints.
