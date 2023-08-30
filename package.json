@@ -1,5 +1,8 @@
 {
-  "name": "base_app",
+  "name": "nuxt3_base_app",
+  "homepage": "https://github.com/moulib-narayana/nuxt3_base_app",
+  "main": "index.js",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt dev",
