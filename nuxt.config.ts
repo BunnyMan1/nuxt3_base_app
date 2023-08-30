@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData:
-            '@use "../base_app/assets/scss/helpers.scss" as *;',
+            '@use "~/assets/scss/helpers.scss" as *;',
         },
       },
     },
