@@ -11,3 +11,10 @@ export const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 export const pixelToRem = (pixel: number, context = 16): string => {
     return pixel / context + 'rem';
 };
+
+export const consoleLogByQuery = (message?: any, ...optionalParams: any[]): void => {
+    const route = useRoute();
+
+    if (route.query.enableLogs)
+        console.log(message, optionalParams);
+}
